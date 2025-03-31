@@ -1,0 +1,39 @@
+.header{
+    position: fixed;
+    margin:0;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    height: 70px;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a {
+    position: absolute;
+    right: 20px;
+    color: white;
+}
+
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.image img {
+    width: 40%; /* Adjusts image width to 50% of the container */
+    max-width: 400px; /* Ensures it doesn't get too big */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+}
+
+.for-more{
+    margin-top: 20px;
+}

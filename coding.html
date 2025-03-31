@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding</title>
+    <link rel="stylesheet" href="styles/coding.css">
+</head>
+<body class="body">
+    <header class="header">
+        <h1>CODING</h1>
+        <a href="index.html">HOME</a>
+    </header>
+
+    <div class="container">
+        <!-- Content Box -->
+        <div class="content">
+            <div class="structured">
+                <h4>Structured Programming Languages</h4>
+                <button onclick="showContent('c')">C</button>
+                <button onclick="showContent('cpp')">C++</button>
+                <button onclick="showContent('java')">JAVA</button>
+                <button onclick="showContent('python')">PYTHON</button>
+            </div>
+
+            <div class="unstructured">
+                <h4>Unstructured Programming Languages</h4>
+                <button onclick="showContent('html')">HTML</button>
+                <button onclick="showContent('css')">CSS</button>
+                <button onclick="showContent('javascript')">JAVASCRIPT</button>
+            </div>
+        </div>
+        
+        <div id="display" class="display-box">
+            <p>Select a language to see details.</p>
+        </div>
+    </div>
+
+    <script>
+        function showContent(language) {
+            const content = {
+                c: "C is a procedural programming language developed by Dennis Ritchie.",
+                cpp: "C++ is an extension of C, adding object-oriented features.",
+                java: "Java is a high-level, object-oriented programming language.",
+                python: "Python is an interpreted language known for simplicity.",
+                html: "HTML is the standard markup language for web pages.",
+                css: "CSS is used to style HTML documents.",
+                javascript: "JavaScript is a programming language for interactive web content."
+            };
+
+            document.getElementById("display").innerHTML = `<p>${content[language]}</p>`;
+        }
+    </script>
+
+</body>
+</html>
